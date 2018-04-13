@@ -8,5 +8,4 @@ object Euclid extends App {
       greatestCommonDivisor(b, a%b)
     }
   }
-  println(greatestCommonDivisor(a,b))
 }
