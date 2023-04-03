@@ -4,11 +4,12 @@
 object Euclid extends App {
 
   def greatestCommonDivisor(a: Int, b: Int): Int = {
-    if(a % b == 0) {
-      b 
+    if(a == 0){
+      b
+    } else if(b == 0){
+      a
     } else {
-      val r = a % b
-      greatestCommonDivisor(b, r)
+      greatestCommonDivisor(b, a%b)
     }
   }
 }
